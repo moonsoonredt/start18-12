@@ -1,4 +1,4 @@
-// // 'use strict'
+'use strict'
 // //
 // // let numberofFilms = 0;
 // // function start() {
@@ -108,7 +108,7 @@
 //     console.log(`Свойство ${key} имеет значение ${option[key]}`);
 // }
 
-const arr = [0, 1, 2, 3, 4, 5];
+// const arr = [0, 1, 2, 3, 4, 5];
 // // arr.push(7);
 // // console.log(arr);
 // for (let i = 0 ; i < arr.length; i++) {
@@ -117,6 +117,77 @@ const arr = [0, 1, 2, 3, 4, 5];
 // for (let val23ue of arr) {
 //     console.log(val23ue);
 // }
-arr.forEach(function (item, i, arr) {
-    console.log(`${i}: ${item} внутри массива ${arr}`);
-})
+// arr.forEach(function (item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+// const str = prompt("", "");
+// const product = str.split(', ');
+// console.log(product);
+//
+// let a = 5,
+//     b = a;
+// b = b+5;
+// console.log(b);
+// console.log(a);
+//
+
+// const obj = {
+//     a: 5,
+//     b: 1
+// };
+// const copy = obj;
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+
+// function copy(mainObj) {
+//     let objCopy = {};
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
+// }
+// const numbers = {
+//     a: 2,
+//     b: 5,
+//     c: {
+//         x: 7,
+//         y: 4
+//     }
+// }
+// const Newnumbers= copy(numbers);
+// console.log(Newnumbers);
+// Newnumbers.a = 10;
+// console.log(Newnumbers);
+
+// let number = 5; debugger
+// function logNumber() {
+//     let number = 4; debugger
+//     console.log(number);
+// }
+//
+// number = 6;
+//
+// logNumber(); debugger
+// number = 8;
+//
+// logNumber(); debugger
+
+
+function createCounter () {
+    let counter = 0;
+    const myFunction = function (){
+        counter = counter + 2;
+        return counter;
+    }
+    return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+
+console.log(c1, c2, c3);
