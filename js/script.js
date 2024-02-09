@@ -176,18 +176,74 @@
 // logNumber(); debugger
 
 
-function createCounter () {
-    let counter = 0;
-    const myFunction = function (){
-        counter = counter + 2;
-        return counter;
-    }
-    return myFunction;
-}
+// function createCounter () {
+//     let counter = 0;
+//     const myFunction = function (){debugger
+//         counter = counter + 2;debugger
+//         return counter;debugger
+//     }
+//     return myFunction;
+// }
+// debugger
+// const increment = createCounter();debugger
+// const c1 = increment();debugger
+// const c2 = increment();debugger
+// const c3 = increment();debugger
 
-const increment = createCounter();
-const c1 = increment();
-const c2 = increment();
-const c3 = increment();
+// console.log(c1, c2, c3);
 
-console.log(c1, c2, c3);
+//task for mind js
+
+// let x = 5;
+// alert(x++);
+// console.log(x);
+
+
+// [] + false - null + true
+// console.log([] + false - null + true);
+
+// let  y = 1
+// let x = y = 2
+// alert(x);
+
+// console.log([] + 1 + 2);
+
+// alert("1"[0]);
+
+// console.log(2 && 1 && null && 0 && undefined);
+
+// console.log(!!(1 && 2) === (1 && 2));
+
+// alert( null || 2 && 3 || 4);
+
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
+// console.log(a == b);
+
+// alert( +" infinity ");
+
+// console.log ("Ёжик" > "яблоко");
+
+// const box = document.getElementById('box')
+// console.log(box);
+//
+// const btns = document.getElementsByTagName('button')
+// console.log(btns);
+//
+// const cycle = document.getElementsByClassName('circle')
+// console.log(cycle);
+//
+// const hearts = document.querySelectorAll('.heart');
+// hearts.forEach(item => {
+//     console.log(item);
+// })
+
+const oneHeart = document.querySelector('.heart');
+console.log(oneHeart);
+
+const oneButton = document.querySelector('button');
+console.log(oneButton);
+
+const circli = document.querySelector('div');
+console.log(circli);
+
